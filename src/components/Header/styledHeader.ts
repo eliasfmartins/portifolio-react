@@ -16,13 +16,18 @@ export const Nav = styled.nav`
   list-style: none;
   gap: 1rem;
 `;
-export const Headerstyle = styled.header<HeaderStylesProps>`
+export const Headerstyle = styled.div<HeaderStylesProps>`
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: ${(props) => props.theme.primary};
   color: ${(props) => props.theme.quaternary};
+
   /* ${(props) => {
     return css`
       background-color: ${HeaderVariants[props.colorHeader]};
