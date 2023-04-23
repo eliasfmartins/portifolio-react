@@ -17,16 +17,15 @@ export const Nav = styled.nav`
   gap: 1rem;
 `;
 export const Headerstyle = styled.div<HeaderStylesProps>`
-  width: 100vw;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   box-sizing: border-box;
   color: blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: ${(props) => props.theme.primary};
-  color: ${(props) => props.theme.quaternary};
+  color: ${(props) => props.theme.sectuenario};
   height: 60px;
 
   /* ${(props) => {

@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { globalContext } from "../../App";
 import { Headerstyle, Nav, colorsHeader } from "./styledHeader";
 import { Link } from "react-router-dom";
 
@@ -6,10 +8,13 @@ interface HeaderProps {
 }
 
 export const Header = ({ colorHeader = "dark" }: HeaderProps) => {
+  const { color, setColor } = useContext(globalContext);
   return (
     <Headerstyle colorHeader={colorHeader}>
       <div>
-        <h1>Header</h1>
+        <h1>
+          {"<&"} / Elias /{"&>"}
+        </h1>
       </div>
       <Nav>
         <li>
@@ -20,6 +25,9 @@ export const Header = ({ colorHeader = "dark" }: HeaderProps) => {
         </li>
         <li>
           <Link to="/page2">Page2</Link>
+        </li>
+        <li>
+          <button onClick={() => setColor(!color)}>Change Color</button>
         </li>
       </Nav>
     </Headerstyle>

@@ -6,5 +6,5 @@ export const AboutContainer = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: ${({ theme }) => theme.tertiary};
+  color: ${({ theme }) => theme.sectuenario};
 `;
