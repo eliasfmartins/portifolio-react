@@ -27,6 +27,7 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
   justify-content: space-between;
   background-color: ${(props) => props.theme.primary};
   color: ${(props) => props.theme.quaternary};
+  height: 60px;
 
   /* ${(props) => {
     return css`

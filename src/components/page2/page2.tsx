@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import { SkillsContainer } from "./style";
 
 export const Page2 = () => {
   return (
-    <footer>
+    <SkillsContainer>
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
@@ -21,6 +22,6 @@ export const Page2 = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </SkillsContainer>
   );
 };
