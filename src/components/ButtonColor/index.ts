@@ -7,7 +7,7 @@ interface ButtonColorProps {
 export const ButtonColor = styled.span<ButtonColorProps>`
   display: inline-block;
   position: relative;
-  top: 4px;
+  top: 2.5px;
   width: 62px;
   height: 26px;
   background-color: ${(props) =>
