@@ -7,7 +7,7 @@ export const HomeContainer = styled(motion.main)`
   justify-content: center;
   height: 100vh;
   background-size: cover;
-  background-image: url("/public/herobg-md.webp");
+  background-image: url("/herobg-md.webp");
   align-items: baseline;
   @media (max-width: 868px) {
     height: auto;

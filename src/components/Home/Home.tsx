@@ -29,3 +29,4 @@ export const Home = () => {
   );
 };
 //tbm vi aqui  da pra botar o nome em uma fonte grande e um subititle  web developer e tas abaixo
+// pro theme dark ja tenho uma ideia  vou usar aquela parada pra fica escuro no inicio e no final
