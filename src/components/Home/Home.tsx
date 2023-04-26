@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+import { ButtonText } from "../ButtonText/ButtonText";
 import { HomeContainer, HomeDysplayed } from "./styled";
 
 export const Home = () => {
@@ -10,7 +11,7 @@ export const Home = () => {
           <h1>
             Welcome. <br />I am Elias
           </h1>
-          <button>Contact me</button>
+          <ButtonText textOfButton="More" />
         </div>
         <div>
           <p>
