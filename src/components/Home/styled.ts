@@ -14,15 +14,9 @@ export const HomeContainer = styled(motion.main)`
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
-
-  @media (max-width: 868px) {
-    height: (100vh+55px);
-  }
 `;
 export const HomeDysplayed = styled.div`
   max-width: 100%;
-  overflow-x: hidden;
-
   padding: 20px;
   margin-top: 60px;
   margin-bottom: 45px;
@@ -37,10 +31,10 @@ export const HomeDysplayed = styled.div`
   align-items: center;
   justify-content: center;
   height: 82vh;
-  @media (max-width: 1068px) {
+  @media (max-width: 1020px) {
+    /* flex-direction: column; */
     height: auto;
   }
-
   div {
     display: flex;
     flex-direction: column;
@@ -59,14 +53,14 @@ export const HomeDysplayed = styled.div`
     padding: 10px;
     font-size: 1.3rem;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 868px) {
     flex-direction: column;
     height: auto;
     div {
-      min-width: unset;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
 
-      width: 90%;
+      width: 100%;
+      margin-top: 2rem;
     }
   }
 `;
