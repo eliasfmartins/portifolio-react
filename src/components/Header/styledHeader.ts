@@ -34,12 +34,11 @@ export const Nav = styled.nav`
 
 export const Headerstyle = styled.div<HeaderStylesProps>`
   text-shadow: 1px 1px 2px black;
-  position: fixed;
+  position: absolute;
   width: 100vw;
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
-  color: blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,6 +53,13 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
       background-color: ${HeaderVariants[props.colorHeader]};
     `;
   }} */
+  z-index: 5;
+  max-width: 100%;
+  /* overflow-x: hidden; */
+
+  h1 {
+    font-size: 2rem;
+  }
 `;
 
 export const LinkStyled = styled(Link)`

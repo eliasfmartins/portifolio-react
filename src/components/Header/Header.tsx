@@ -13,9 +13,7 @@ export const Header = ({ colorHeader = "dark" }: HeaderProps) => {
   return (
     <Headerstyle colorHeader={colorHeader}>
       <div>
-        <h1>
-          {"<&"}/ Elias /{"&>"}
-        </h1>
+        <h1>Elias</h1>
       </div>
       <Nav>
         <li>
