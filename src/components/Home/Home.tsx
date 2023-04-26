@@ -11,7 +11,7 @@ export const Home = () => {
           <h1>
             Welcome. <br />I am Elias
           </h1>
-          <ButtonText textOfButton="More" />
+          <ButtonText textOfButton="CONTACT ME" />
         </div>
         <div>
           <p>
