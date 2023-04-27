@@ -12,12 +12,12 @@ interface GlobalContextProps {
 }
 
 export const globalContext = createContext<GlobalContextProps>({
-  color: false,
+  color: true,
   setColor: () => {},
 });
 
 export const App = () => {
-  const [color, setColor] = useState<boolean>(true);
+  const [color, setColor] = useState<boolean>(false);
 
   return (
     <div>
