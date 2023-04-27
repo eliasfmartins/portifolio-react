@@ -62,5 +62,11 @@ export const HomeDysplayed = styled.div`
       width: 100%;
       margin-top: 2rem;
     }
+    h2 {
+      font-size: 2.2rem;
+    }
+    h1 {
+      font-size: 4.5rem;
+    }
   }
 `;

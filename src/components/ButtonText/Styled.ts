@@ -62,6 +62,7 @@ export const ButtonStyle = styled.button<TextButtonType>`
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(2px);
+  margin-top: 20px;
 
   &::before {
     content: "${(props) => props.textOfButton}";
