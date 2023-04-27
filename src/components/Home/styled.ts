@@ -40,7 +40,7 @@ export const HomeDysplayed = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 380px;
+    min-width: 360px;
     max-width: 500px;
   }
   h2 {
