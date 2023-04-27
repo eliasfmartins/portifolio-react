@@ -15,14 +15,14 @@ export const Home = () => {
         </div>
         <div>
           <p>
-            Atualmente, sou estudante de Sistemas de Informação pela Estácio e
-            já estou no quarto semestre. Sou apaixonado por tecnologia e estou
-            sempre buscando aprender mais. Além de ser entusiasta de tecnologia,
-            também sou dedicado e persistente. Atualmente aprendendo Node.js e
-            React. Estou em busca de um estágio para aprimorar meus
-            conhecimentos e ter a oportunidade de colocar em prática o que
-            aprendi. Acredito que posso ser um grande contribuinte com minhas
-            habilidades técnicas e paixão pela tecnologia
+            Currently, I am a Systems Information student at Estácio University
+            and I am already in my fourth semester. I am passionate about
+            technology and always looking to learn more. In addition to being a
+            technology enthusiast, I am also dedicated and persistent.
+            Currently, I am learning Node.js and React. I am looking for an
+            internship to improve my knowledge and have the opportunity to put
+            into practice what I have learned. I believe that I can be a great
+            contributor with my technical skills and passion for technology.
           </p>
         </div>
       </HomeDysplayed>
