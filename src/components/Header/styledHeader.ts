@@ -31,7 +31,6 @@ export const Nav = styled.nav`
     text-decoration: none;
   }
 `;
-
 export const Headerstyle = styled.div<HeaderStylesProps>`
   text-shadow: 1px 1px 2px black;
   position: absolute;
@@ -61,27 +60,10 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
     font-size: 2rem;
   }
 `;
-
 export const LinkStyled = styled(Link)`
   text-shadow: 1px 1px 2px black;
   padding: 5px;
   position: relative;
   color: ${({ theme }) => theme.septenary};
   background-color: transparent;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: ${({ theme }) => theme.septenary};
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover::after {
-    width: 100%;
-    color: red;
-  }
 `;

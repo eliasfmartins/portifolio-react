@@ -51,7 +51,7 @@ export const ButtonStyle = styled.button<TextButtonType>`
   background: transparent;
   border: white 2px solid;
   color: white;
-  padding: 17px 50px;
+  padding: 20px 89px;
   font-size: 1.5rem;
   width: 10rem;
   white-space: nowrap;
