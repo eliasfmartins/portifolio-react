@@ -8,7 +8,7 @@ interface HeaderProps {
   colorHeader?: colorsHeader;
 }
 
-export const Header = ({ colorHeader = "dark" }: HeaderProps) => {
+export const Header = ({ colorHeader = "light" }: HeaderProps) => {
   const { color, setColor } = useContext(globalContext);
   return (
     <Headerstyle colorHeader={colorHeader}>

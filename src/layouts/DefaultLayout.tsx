@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 export const DefaultLayout = () => {
   return (
     <div>
-      <Header colorHeader="dark" />
+      <Header colorHeader="light" />
       <Outlet />
       <Footer />
     </div>
