@@ -27,10 +27,38 @@ export const Nav = styled.nav`
   list-style: none;
   gap: 1rem;
   color: ${({ theme }) => theme.quaternary};
+  &.active {
+    visibility: visible;
+    height: 100vh;
+    background: #040405;
+    z-index: 50;
+  }
   a {
     text-decoration: none;
   }
+
+  @media (max-width: 768px) {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    right: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    height: 0;
+    overflow-y: hidden;
+    top: 0;
+  }
+  &.active {
+    visibility: visible;
+    height: 100vh;
+    background: #040405;
+    z-index: 50;
+  }
 `;
+
 export const Headerstyle = styled.div<HeaderStylesProps>`
   text-shadow: 1px 1px 2px black;
   position: absolute;
@@ -58,6 +86,61 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
 
   h1 {
     font-size: 2rem;
+  }
+  hr {
+    margin-top: 10px;
+    width: 50px;
+  }
+  button.mobile {
+    display: none;
+  }
+  button.mobile hr {
+    transition: 2s;
+    background: red;
+    padding: 10%;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  div.active {
+    position: fixed;
+    z-index: 500000;
+  }
+  @media (max-width: 768px) {
+    button.mobile {
+      display: block;
+      border: transparent;
+      background-color: transparent;
+    }
+    button.mobile hr {
+      transition: 2s;
+      background: red;
+      padding: 5%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button.mobile.active hr.hr1 {
+      transform: rotate(405deg);
+      position: relative;
+      bottom: -18px;
+    }
+    button.mobile.active hr.hr2 {
+      background: transparent;
+      border: transparent;
+    }
+    button.mobile.active hr.hr3 {
+      transform: rotate(-405deg);
+      position: relative;
+      top: -15px;
+    }
+    button.mobile {
+      position: absolute;
+      right: 15px;
+      top: 0px;
+      z-index: 5000;
+    }
+    button.mobile.active {
+      position: fixed;
+    }
   }
 `;
 export const LinkStyled = styled(Link)`

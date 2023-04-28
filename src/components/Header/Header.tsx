@@ -1,26 +1,63 @@
-import { useContext } from "react";
-import { globalContext } from "../../App";
+import { useContext, useState, useEffect } from "react";
 import { Headerstyle, LinkStyled, Nav, colorsHeader } from "./styledHeader";
 import { ButtonColor } from "../ButtonColor";
+import { globalContext } from "../../App";
+import classnames from "classnames";
+
 interface HeaderProps {
   colorHeader?: colorsHeader;
 }
+
 export const Header = ({ colorHeader = "light" }: HeaderProps) => {
+  const [isActive, setIsActive] = useState(false);
   const { color, setColor } = useContext(globalContext);
+
+  useEffect(() => {
+    const bodyElement = document.querySelector("body");
+    if (isActive) {
+      bodyElement?.classList.add("menu-open");
+    } else {
+      bodyElement?.classList.remove("menu-open");
+    }
+  }, [isActive]);
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth > 768 && isActive) {
+        setIsActive(false);
+      }
+    }
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isActive]);
+
   return (
     <Headerstyle colorHeader={colorHeader}>
-      <div>
+      <div className={isActive ? "active" : ""}>
         <h1>Elias</h1>
       </div>
-      <Nav>
+      <button
+        className={`mobile ${isActive ? "active" : ""}`}
+        onClick={() => setIsActive(!isActive)}
+      >
+        <hr className="hr1" />
+        <hr className="hr2" />
+        <hr className="hr3" />
+      </button>
+      <Nav className={classnames({ active: isActive })}>
         <li>
-          <LinkStyled to="/">Home</LinkStyled>
+          <LinkStyled to="/" onClick={() => setIsActive(false)}>
+            Home
+          </LinkStyled>
         </li>
         <li>
-          <LinkStyled to="/page1">Page1</LinkStyled>
+          <LinkStyled to="/page1" onClick={() => setIsActive(false)}>
+            Page1
+          </LinkStyled>
         </li>
         <li>
-          <LinkStyled to="/page2">Page2</LinkStyled>
+          <LinkStyled to="/page2" onClick={() => setIsActive(false)}>
+            Page2
+          </LinkStyled>
         </li>
         <li>
           <ButtonColor isDark={false} onClick={() => setColor(!color)} />
@@ -29,45 +66,3 @@ export const Header = ({ colorHeader = "light" }: HeaderProps) => {
     </Headerstyle>
   );
 };
-
-// import { useContext, useState } from "react";
-// import { globalContext } from "../../App";
-// import { Headerstyle, LinkStyled, Nav, colorsHeader } from "./styledHeader";
-// import { ButtonColor } from "../ButtonColor";
-// interface HeaderProps {
-//   colorHeader?: colorsHeader;
-// }
-// export const Header = ({ colorHeader = "light" }: HeaderProps) => {
-//   const { color, setColor } = useContext(globalContext);
-//   const [menuOpen, setMenuOpen] = useState(false);
-//   const toggleMenu = () => {
-//     setMenuOpen(!menuOpen);
-//   };
-//   return (
-//     <Headerstyle colorHeader={colorHeader}>
-//       <div>
-//         <h1>Elias</h1>
-//       </div>
-//       <Nav className={menuOpen ? "open" : ""}>
-//         <li>
-//           <LinkStyled to="/" onClick={toggleMenu}>
-//             Home
-//           </LinkStyled>
-//         </li>
-//         <li>
-//           <LinkStyled to="/page1" onClick={toggleMenu}>
-//             Page1
-//           </LinkStyled>
-//         </li>
-//         <li>
-//           <LinkStyled to="/page2" onClick={toggleMenu}>
-//             Page2
-//           </LinkStyled>
-//         </li>
-//         <li>
-//           <ButtonColor isDark={false} onClick={() => setColor(!color)} />
-//         </li>
-//       </Nav>
-//     </Headerstyle>
-//   );
-// };
