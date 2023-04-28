@@ -70,11 +70,17 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
   align-items: center;
   justify-content: space-between;
   /* background-color: ${(props) => props.theme.primary}; */
-  color: ${(props) => props.theme.septenary};
+  color: white;
   background-color: transparent;
   height: 60px;
 
-
+  div.center {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 6px 0 ;
+    border-bottom: 1px solid white;
+  }
   /* ${(props) => {
     return css`
       background-color: ${HeaderVariants[props.colorHeader]};
@@ -146,6 +152,6 @@ export const LinkStyled = styled(Link)`
   text-shadow: 1px 1px 2px black;
   padding: 5px;
   position: relative;
-  color: ${({ theme }) => theme.septenary};
+  color: white;
   background-color: transparent;
 `;

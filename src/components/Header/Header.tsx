@@ -33,6 +33,7 @@ export const Header = ({ colorHeader = "light" }: HeaderProps) => {
 
   return (
     <Headerstyle colorHeader={colorHeader}>
+      <div className="center">
       <div className={isActive ? "active" : ""}>
         <h1>Elias</h1>
       </div>
@@ -64,6 +65,7 @@ export const Header = ({ colorHeader = "light" }: HeaderProps) => {
           <ButtonColor isDark={false} onClick={() => setColor(!color)} />
         </li>
       </Nav>
+      </div>
     </Headerstyle>
   );
 };

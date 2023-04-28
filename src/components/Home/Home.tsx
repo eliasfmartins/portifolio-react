@@ -1,10 +1,13 @@
 // import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { globalContext } from "../../App";
 import { ButtonText } from "../ButtonText/ButtonText";
 import { HomeContainer, HomeDysplayed } from "./styled";
 
 export const Home = () => {
+  const { color, setColor } = useContext(globalContext);
   return (
-    <HomeContainer>
+    <HomeContainer className={color ?'darkmode':''}>
       <HomeDysplayed>
         <div>
           <h2>Front End Developer</h2>

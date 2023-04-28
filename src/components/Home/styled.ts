@@ -1,40 +1,37 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 export const HomeContainer = styled(motion.main)`
-  width: 100vw;
+  width: 100%;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-size: cover;
-  background-image: url("/herobg-md.webp");
   align-items: baseline;
-  height: auto;
+  height: calc(100vh - 30px);
   min-height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
+  &.darkmode{
+  background: linear-gradient(black, transparent,transparent,transparent, black);
+    
+  }
 `;
 export const HomeDysplayed = styled.div`
+  
   max-width: 100%;
   padding: 20px;
   margin-top: 60px;
   margin-bottom: 45px;
   flex-wrap: wrap;
-  border-top: 1px solid white;
-  /* border-bottom: 1px solid white; */
+ 
   display: flex;
   width: 95vw;
   gap: 2rem;
   text-shadow: 1px 1px 2px black;
   color: white;
   align-items: center;
-  justify-content: center;
-  height: 82vh;
-  @media (max-width: 1020px) {
-    /* flex-direction: column; */
-    height: auto;
-  }
+  justify-content: center; 
   div {
     display: flex;
     flex-direction: column;

@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
  body {
-  background-color: ${(props) => props.theme.quaternary};
+  background: url("/herobg-md.webp");
+  background-size: cover;
   /* color:white; */
  }
 
