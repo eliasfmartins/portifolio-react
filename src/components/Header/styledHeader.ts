@@ -73,7 +73,7 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
   color: ${(props) => props.theme.septenary};
   background-color: transparent;
   height: 60px;
-  /* border-bottom: 2px solid; */
+
 
   /* ${(props) => {
     return css`
@@ -82,7 +82,6 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
   }} */
   z-index: 5;
   max-width: 100%;
-  /* overflow-x: hidden; */
 
   h1 {
     font-size: 2rem;

@@ -20,6 +20,7 @@ export const Header = ({ colorHeader = "light" }: HeaderProps) => {
       bodyElement?.classList.remove("menu-open");
     }
   }, [isActive]);
+
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth > 768 && isActive) {
