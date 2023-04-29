@@ -7,11 +7,9 @@ export const FooterStyle = styled.footer`
   display: flex;
   justify-content: center;
   color: white;
-  background: transparent;
   align-items: center;
   justify-content: center;
   height: 30px;
-  margin-top: -30px;
   a {
     text-decoration: none;
     color: white;
@@ -20,11 +18,13 @@ export const FooterStyle = styled.footer`
   }
   div {
     display: flex;
-    height: 100%;
     width: 96%;
     align-items: center;
     justify-content: center;
     border-top: 1px solid white;
     z-index: 1;
+    height: 100%;
+  }
+  @media (max-width: 768px){
   }
 `;

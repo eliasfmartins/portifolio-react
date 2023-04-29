@@ -18,7 +18,6 @@ const HeaderVariants = {
 };
 
 export const Nav = styled.nav`
-  border-radius: 8px;
   padding: 5px;
   display: flex;
   align-items: center;
@@ -26,7 +25,7 @@ export const Nav = styled.nav`
   text-decoration: none;
   list-style: none;
   gap: 1rem;
-  color: ${({ theme }) => theme.quaternary};
+  color: white;
   &.active {
     visibility: visible;
     height: 100vh;
@@ -50,6 +49,7 @@ export const Nav = styled.nav`
     height: 0;
     overflow-y: hidden;
     top: 0;
+    gap: 2rem;
   }
   &.active {
     visibility: visible;
@@ -61,25 +61,22 @@ export const Nav = styled.nav`
 
 export const Headerstyle = styled.div<HeaderStylesProps>`
   text-shadow: 1px 1px 2px black;
-  position: absolute;
-  width: 100vw;
-  margin: 0;
-  padding: 20px;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  /* background-color: ${(props) => props.theme.primary}; */
+  justify-content: center;
   color: white;
   background-color: transparent;
   height: 60px;
-
   div.center {
     display: flex;
-    width: 100%;
+    width: 96%;
+    padding: 0 20px;
+    align-items: center;
     justify-content: space-between;
-    padding: 6px 0 ;
     border-bottom: 1px solid white;
+    height: 100%;
   }
   /* ${(props) => {
     return css`
@@ -107,6 +104,7 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
     cursor: pointer;
   }
   div.active {
+    transition: 0.8s;
     position: fixed;
     z-index: 500000;
   }
@@ -139,7 +137,7 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
     }
     button.mobile {
       position: absolute;
-      right: 15px;
+      right: 25px;
       top: 0px;
       z-index: 5000;
     }
