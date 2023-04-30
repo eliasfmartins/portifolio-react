@@ -27,6 +27,7 @@ export const Nav = styled.nav`
   gap: 1rem;
   color: white;
   &.active {
+    
     visibility: visible;
     height: 100vh;
     background: #040405;
@@ -52,6 +53,7 @@ export const Nav = styled.nav`
     gap: 2rem;
   }
   &.active {
+    position: fixed;
     visibility: visible;
     height: 100vh;
     background: #040405;

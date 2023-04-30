@@ -48,10 +48,10 @@ h3 {
 }
 @media (max-width: 900px){
   div.text{
-    max-width: 100%;
+    max-width: 90%;
   }
   div.text.tx1 {
-    max-width: 650px;
+    max-width: 90%;
   }
 }
 @media (max-width: 1250px){
