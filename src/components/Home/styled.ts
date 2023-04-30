@@ -12,7 +12,7 @@ color: white;
 flex-wrap: wrap;
 
 div.text {
-min-width: 450px;
+min-width: 350px;
 color: white;
 padding: 20px;
 max-width: 500px;
