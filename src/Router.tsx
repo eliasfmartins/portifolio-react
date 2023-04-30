@@ -2,7 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 
 import { DefaultLayout } from "./layouts/DefaultLayout";
 import { AnimatePresence } from "framer-motion";
-import { Home2 } from "./components/Home2";
+import { Home2 } from "./components/Home";
 import { Home3 } from "./components/Home2 copy";
 
 

@@ -61,6 +61,8 @@ export const Nav = styled.nav`
 
 export const Headerstyle = styled.div<HeaderStylesProps>`
   text-shadow: 1px 1px 2px black;
+  font-family: 'Bruno Ace SC', cursive;
+  backdrop-filter: blur(5px);
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -98,7 +100,6 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
   }
   button.mobile hr {
     transition: 2s;
-    background: red;
     padding: 10%;
     border-radius: 5px;
     cursor: pointer;
@@ -116,7 +117,7 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
     }
     button.mobile hr {
       transition: 2s;
-      background: red;
+      background: white;
       padding: 5%;
       border-radius: 5px;
       cursor: pointer;
@@ -152,4 +153,19 @@ export const LinkStyled = styled(Link)`
   position: relative;
   color: white;
   background-color: transparent;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 `;
+

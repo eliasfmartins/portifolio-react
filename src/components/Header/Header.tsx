@@ -35,7 +35,7 @@ export const Header = ({ colorHeader = "light" }: HeaderProps) => {
     <Headerstyle colorHeader={colorHeader}>
       <div className="center">
       <div className={isActive ? "active" : ""}>
-        <h1>Elias</h1>
+        <h1>{'</'} Elias{'/>'}</h1>
       </div>
       <button
         className={`mobile ${isActive ? "active" : ""}`}

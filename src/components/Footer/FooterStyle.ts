@@ -10,6 +10,7 @@ export const FooterStyle = styled.footer`
   align-items: center;
   justify-content: center;
   height: 30px;
+  backdrop-filter: blur(5px);
   a {
     text-decoration: none;
     color: white;
@@ -24,7 +25,5 @@ export const FooterStyle = styled.footer`
     border-top: 1px solid white;
     z-index: 1;
     height: 100%;
-  }
-  @media (max-width: 768px){
   }
 `;
