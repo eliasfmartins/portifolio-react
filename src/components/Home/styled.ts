@@ -66,5 +66,13 @@ h3 {
   div.text.tx1 {
     max-width: 650px;
   }
+  @media (max-width: 1250px){
+   h1{
+    font-size: 3.9rem;
+   }
+   h2{
+    font-size: 1.8rem;
+   }
+  }
 }
 `;

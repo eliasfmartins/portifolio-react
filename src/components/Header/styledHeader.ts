@@ -27,11 +27,10 @@ export const Nav = styled.nav`
   gap: 1rem;
   color: white;
   &.active {
-    
     visibility: visible;
     height: 100vh;
     background: #040405;
-    z-index: 50;
+    z-index: 5;
   }
   a {
     text-decoration: none;
@@ -53,11 +52,9 @@ export const Nav = styled.nav`
     gap: 2rem;
   }
   &.active {
-    position: fixed;
     visibility: visible;
     height: 100vh;
-    background: #040405;
-    z-index: 50;
+    position: fixed;
   }
 `;
 
@@ -81,6 +78,9 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
     justify-content: space-between;
     border-bottom: 1px solid white;
     height: 100%;
+  }
+  h1.logo{
+    z-index: 60000;
   }
   /* ${(props) => {
     return css`
@@ -109,13 +109,14 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
   div.active {
     transition: 0.8s;
     position: fixed;
-    z-index: 500000;
+    z-index: 50;
   }
   @media (max-width: 768px) {
     button.mobile {
       display: block;
       border: transparent;
       background-color: transparent;
+      z-index: 50000;
     }
     button.mobile hr {
       transition: 2s;
