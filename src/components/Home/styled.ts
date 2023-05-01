@@ -18,6 +18,9 @@ color: white;
 padding: 20px;
 max-width: 500px;
 font-family: 'Fira Sans', sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 div.text.fronte h2 {
   font-family: 'Goldman', cursive;
