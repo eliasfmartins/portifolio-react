@@ -68,10 +68,10 @@ h3 {
   }
   @media (max-width: 1250px){
    h1{
-    font-size: 3.9rem;
+    font-size: 3.7rem;
    }
    h2{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
    }
   }
 }
