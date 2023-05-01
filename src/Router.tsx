@@ -14,8 +14,6 @@ export const Router = () => {
         <Route path="/" element={<DefaultLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/home3" element={<Home3 />} />
-          {/* <Route path="/page1" element={<TEste01 />} /> */}
-          {/* <Route path="/page2" element={<Teste02 />} /> */}
         </Route>
       </Routes>
     </AnimatePresence>

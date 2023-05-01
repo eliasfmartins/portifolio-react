@@ -6,8 +6,8 @@ import classnames from "classnames";
 
 interface HeaderProps {
   colorHeader?: colorsHeader;
+  isActive:boolean;
 }
-
 export const Header = ({ colorHeader = "light" }: HeaderProps) => {
   const [isActive, setIsActive] = useState(false);
   const { color, setColor } = useContext(globalContext);
@@ -32,7 +32,7 @@ export const Header = ({ colorHeader = "light" }: HeaderProps) => {
   }, [isActive]);
 
   return (
-    <Headerstyle colorHeader={colorHeader}>
+    <Headerstyle colorHeader={colorHeader} isActive={isActive} >
       <div className="center">
       <div className={isActive ? "active" : ""}>
         <h1 className="logo">{'</'} Elias{'/>'}</h1>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-
+margin-top: 35px;
 height:calc(100vh - 90px);
 display: flex;
 align-items: center;
@@ -12,6 +12,7 @@ color: white;
 flex-wrap: wrap;
 
 div.text {
+position: relative;
 min-width: 350px;
 color: white;
 padding: 20px;
@@ -34,6 +35,7 @@ h1 {
 p {
   font-size: 1.3rem;
 }
+
 div.date {
 width: 200px;
 display: flex;
@@ -64,9 +66,12 @@ h3 {
     
   }
   div.text.tx1 {
+    display: flex;
     max-width: 650px;
+    align-items: center;
+    flex-direction: column;
   }
-  @media (max-width: 1250px){
+  @media (max-width: 768px){
    h1{
     font-size: 3.7rem;
    }

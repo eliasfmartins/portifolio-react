@@ -11,6 +11,7 @@ declare module "react" {
 
 interface HeaderStylesProps {
   colorHeader: colorsHeader;
+  isActive: boolean;
 }
 const HeaderVariants = {
   light: "white",
@@ -26,12 +27,19 @@ export const Nav = styled.nav`
   list-style: none;
   gap: 1rem;
   color: white;
+
   &.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     visibility: visible;
     height: 100vh;
     background: #040405;
     z-index: 5;
   }
+
   a {
     text-decoration: none;
   }
@@ -49,17 +57,15 @@ export const Nav = styled.nav`
     height: 0;
     overflow-y: hidden;
     top: 0;
+    bottom: 0;
     gap: 2rem;
-  }
-  &.active {
-    visibility: visible;
-    height: 100vh;
-    position: fixed;
   }
 `;
 
+
 export const Headerstyle = styled.div<HeaderStylesProps>`
   text-shadow: 1px 1px 2px black;
+  top: 0;
   font-family: 'Bruno Ace SC', cursive;
   backdrop-filter: blur(5px);
   width: 100%;
@@ -70,7 +76,9 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
   color: white;
   background-color: transparent;
   height: 60px;
+  position: fixed;
   div.center {
+    position: ${props => props.isActive ? 'fixed' : 'static'};
     display: flex;
     width: 96%;
     padding: 0 20px;

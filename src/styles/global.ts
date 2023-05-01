@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   background: url("/herobg-md.webp");
   background-size: cover;
   /* color:white; */
+  
  }
 
  body, input-security, textarea, button {

@@ -17,7 +17,7 @@ export const Home = () => {
       </div>
       <div className="date">
         <div className="number">
-        <h3>{currentDate.getDate() < 10 ? '0' + currentDate.getDate() : currentDate.getDate()}</h3>
+          <h3>{currentDate.getDate() < 10 ? '0' + currentDate.getDate() : currentDate.getDate()}</h3>
         </div>
         <div className="month">
           {months[currentDate.getMonth()]} *
@@ -35,7 +35,9 @@ export const Home = () => {
           into practice what I have learned. I believe that I can be a great
           contributor with my technical skills and passion for technology.
         </p>
-        <ButtonText textOfButton="CONTACT ME" />
+        <span>
+          <ButtonText textOfButton="CONTACT ME" />
+        </span>
       </div>
 
     </HomeContainer >
