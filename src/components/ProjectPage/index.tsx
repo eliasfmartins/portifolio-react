@@ -1,16 +1,28 @@
+import { useContext, useReducer } from "react"
 import { ProjectContainer } from "./styled"
+import { ReduceContext } from "../reducer/context"
+import { loadFilmePage, loadLandingPage } from "../reducer/actions"
+
+
+
 
 export const ProjectPage = () => {
+  const reducerContext = useContext(ReduceContext);
+  const { reducerState, reducerDispatch } = reducerContext;
+
   return (
     <ProjectContainer>
       <div className="container">
         <div className="title">
-          <h2>Name of project</h2>
+          <h2>{reducerState.title}</h2>
         </div>
         <div className="text">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore amet quisquam distinctio porro odit dicta mollitia similique doloremque ratione officiis. Placeat perferendis at consequuntur eaque, excepturi in est sunt itaque?
+            {reducerState.body}
           </p>
+        </div>
+        <div>
+          <a href={reducerState.links.linkOne}>site</a>
         </div>
 
       </div>
@@ -19,8 +31,8 @@ export const ProjectPage = () => {
           <h2>Projects</h2>
         </div>
         <div className="optionsprojects">
-          <h4>teste1</h4>
-          <h4>teste2</h4>
+          <h4 onClick={() => reducerDispatch(loadLandingPage())}>teste1s</h4>
+          <h4 onClick={() => reducerDispatch(loadFilmePage())}>teste2</h4>
           <h4>teste3</h4>
           <h4>teste4</h4>
           <h4>teste5</h4>

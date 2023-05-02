@@ -16,6 +16,7 @@ export const ProjectContainer = styled.div`
     max-width: 600px;
     max-height: 500px;
     min-height: 300px;
+    width: 50%;
     padding: 20px;
     border-top: solid 1px white;
     border-left: solid 1px white;

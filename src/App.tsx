@@ -5,6 +5,7 @@ import { darkTheme } from "./styles/themes/dark";
 import { Dispatch, SetStateAction, createContext, useState } from "react";
 import { GlobalStyle } from "./styles/global";
 import { Router } from "./Router";
+import { ReducerProvider } from "./components/reducer/context";
 
 interface GlobalContextProps {
   color: boolean;
@@ -22,12 +23,14 @@ export const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <ReducerProvider>
         <globalContext.Provider value={{ color, setColor }}>
           <ThemeProvider theme={color ? defaultTheme : darkTheme}>
             <Router />
             <GlobalStyle />
           </ThemeProvider>
         </globalContext.Provider>
+        </ReducerProvider>
       </BrowserRouter>
     </div>
   );
