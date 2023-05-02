@@ -4,7 +4,7 @@ import { DefaultLayout } from "./layouts/DefaultLayout";
 import { AnimatePresence } from "framer-motion";
 import { Home} from "./components/Home";
 import { ProjectPage } from "./components/ProjectPage";
-import { SkillsetOverview } from "./components/SkillsetOverview";
+import { Skills } from "./components/Skills";
 
 
 export const Router = () => {
@@ -15,7 +15,7 @@ export const Router = () => {
         <Route path="/" element={<DefaultLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/projectpage" element={<ProjectPage/>} />
-          <Route path="/skillsetoverview" element={<SkillsetOverview />} />
+          <Route path="/skills" element={<Skills />} />
         </Route>
       </Routes>
     </AnimatePresence>
