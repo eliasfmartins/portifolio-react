@@ -52,12 +52,12 @@ export const Header = ({ colorHeader = "light" }: HeaderProps) => {
           </LinkStyled>
         </li>
         <li>
-          <LinkStyled to="/page1" onClick={() => setIsActive(false)}>
+          <LinkStyled to="/projectpage" onClick={() => setIsActive(false)}>
             Page1
           </LinkStyled>
         </li>
         <li>
-          <LinkStyled to="/home3" onClick={() => setIsActive(false)}>
+          <LinkStyled to="/skillsetoverview" onClick={() => setIsActive(false)}>
             Page2
           </LinkStyled>
         </li>
