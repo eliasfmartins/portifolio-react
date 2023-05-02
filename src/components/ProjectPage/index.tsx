@@ -2,6 +2,7 @@ import { useContext, useReducer } from "react"
 import { ProjectContainer } from "./styled"
 import { ReduceContext } from "../reducer/context"
 import { loadFilmePage, loadLandingPage } from "../reducer/actions"
+import { data2, data3, data4, data5 } from "../reducer/data"
 
 
 
@@ -31,11 +32,11 @@ export const ProjectPage = () => {
           <h2>Projects</h2>
         </div>
         <div className="optionsprojects">
-          <h4 onClick={() => reducerDispatch(loadLandingPage())}>teste1s</h4>
-          <h4 onClick={() => reducerDispatch(loadFilmePage())}>teste2</h4>
-          <h4>teste3</h4>
-          <h4>teste4</h4>
-          <h4>teste5</h4>
+          <h4 onClick={() => reducerDispatch(loadLandingPage())}>{reducerState.title}</h4>
+          <h4 onClick={() => reducerDispatch(loadFilmePage())}>{data2.title}</h4>
+          <h4 onClick={() => reducerDispatch(loadFilmePage())}>{data3.title}</h4>
+          <h4 onClick={() => reducerDispatch(loadFilmePage())}>{data4.title}</h4>
+          <h4 onClick={() => reducerDispatch(loadFilmePage())}>{data5.title}</h4>
         </div>
 
       </div>

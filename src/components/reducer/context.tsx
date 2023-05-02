@@ -1,6 +1,6 @@
 import { createContext, useReducer } from "react";
 import { reducer } from "./reducer";
-import { data } from "./data";
+import { Default } from "./data";
 
 interface ContextType{
   reducerState:any;
@@ -12,7 +12,7 @@ export const ReduceContext = createContext<ContextType>({
   reducerDispatch:null,
 });
 export const ReducerProvider = ({ children }: any) => {
-  const [reducerState, reducerDispatch] = useReducer(reducer,data)
+  const [reducerState, reducerDispatch] = useReducer(reducer,Default)
   return <ReduceContext.Provider value={{reducerState, reducerDispatch}}>
     {children}
   </ReduceContext.Provider>
