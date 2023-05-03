@@ -125,8 +125,13 @@ export const ProjectContainer = styled.div`
     padding: 10px;
   }
   div.container{
+    transition: 0.8s;
     width:88vw;
     max-width: none;
+  }
+  div.container.mounted{
+    transition: 0.8s;
+    color: red;
   }
   div.options{
     width:88vw;
