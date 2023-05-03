@@ -21,6 +21,7 @@ font-family: 'Fira Sans', sans-serif;
 display: flex;
 flex-direction: column;
 align-items: center;
+backdrop-filter: blur(2px);
 }
 div.text.fronte h2 {
   font-family: 'Goldman', cursive;
@@ -33,6 +34,8 @@ h1 {
   font-size: 5.1rem;
   font-weight: 700;
   font-family: 'Goldman', cursive;
+ 
+
 
 }
 p {

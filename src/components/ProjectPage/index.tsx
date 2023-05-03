@@ -3,7 +3,6 @@ import { ProjectContainer } from "./styled"
 import { ReduceContext } from "../reducer/context"
 import { loadHomePage, loadFilmePage, loadLandingPage, loadAndroidPage, loadPortifolioPage } from "../reducer/actions"
 import { home, landingPage, portifolio, siteAndroid, siteFilmes } from "../reducer/data"
-import classNames from "classnames"
 
 
 
@@ -11,20 +10,20 @@ import classNames from "classnames"
 export const ProjectPage = () => {
   const reducerContext = useContext(ReduceContext);
   const { reducerState, reducerDispatch } = reducerContext;
-
+  
   return (
     <ProjectContainer>
       <div className="container">
-        <div className="title">
-          <h2>{reducerState.title}</h2>
-        </div>
+        
         <div className="text">
+          <h2>{reducerState.title}</h2>
           <p>
             {reducerState.body}
           </p>
         </div>
-        <div>
-          <a href={reducerState.links.linkOne}>site</a>
+        <div className="links">
+          <a className="linktwo" target="_blank" href={reducerState.links.linkOne}>Site</a>
+          <a className="linkone" target="_blank" href={reducerState.links.linkTwo}>Projeto no GitHub</a>
         </div>
 
       </div>
@@ -34,15 +33,15 @@ export const ProjectPage = () => {
         </div>
         <div className="optionsprojects">
           <h4 onClick={() => reducerDispatch(loadHomePage())}
-            className={home.isOpen ? 'actived' : ''}>{home.title}</h4>
+            className={home.isOpen ? 'obj actived' : 'obj'}>{home.title}</h4>
           <h4 onClick={() => reducerDispatch(loadPortifolioPage())}
-            className={portifolio.isOpen ? 'actived' : ''}>{portifolio.title}</h4>
+            className={portifolio.isOpen ? 'obj actived' : 'obj'}>{portifolio.title}</h4>
           <h4 onClick={() => reducerDispatch(loadFilmePage())}
-            className={siteFilmes.isOpen ? 'actived' : ''}>{siteFilmes.title}</h4>
+            className={siteFilmes.isOpen ? 'obj actived' : 'obj'}>{siteFilmes.title}</h4>
           <h4 onClick={() => reducerDispatch(loadAndroidPage())}
-            className={siteAndroid.isOpen ? 'actived' : ''}>{siteAndroid.title}</h4>
+            className={siteAndroid.isOpen ? 'obj actived' : 'obj'}>{siteAndroid.title}</h4>
           <h4 onClick={() => reducerDispatch(loadLandingPage())}
-            className={landingPage.isOpen ? 'actived' : ''}>{landingPage.title}</h4>
+            className={landingPage.isOpen ? 'obj actived' : 'obj'}>{landingPage.title}</h4>
         </div>
 
       </div>

@@ -23,7 +23,7 @@ export const home = {
   body: 'Este portfólio foi desenvolvido utilizando React e Styled Components, com o objetivo de apresentar os dados de forma interativa e visualmente atraente. Para isso, foi utilizado o conceito de Reducer para gerenciar o estado da aplicação. Além disso, foram implementadas outras técnicas e recursos para aprimorar a experiência do usuário',
   links: {
     linkOne: 'https://portifolio-react-peach.vercel.app/',
-    linkTwo: 'www.google.com',
+    linkTwo: 'https://github.com/EliasFMartins/portifolio-react',
     linkTree: 'www.google.com',
   },
   isOpen:false
