@@ -19,13 +19,14 @@
 // arquivo data.ts
 
 export const home = {
-  title: 'Home',
-  body: 'Tem mais coisa pra vc olhar n tem n fera ???',
+  title: 'Detalhes do Projeto',
+  body: 'Este portfólio foi desenvolvido utilizando React e Styled Components, com o objetivo de apresentar os dados de forma interativa e visualmente atraente. Para isso, foi utilizado o conceito de Reducer para gerenciar o estado da aplicação. Além disso, foram implementadas outras técnicas e recursos para aprimorar a experiência do usuário',
   links: {
     linkOne: 'https://portifolio-react-peach.vercel.app/',
     linkTwo: 'www.google.com',
     linkTree: 'www.google.com',
   },
+  isOpen:false
 };
 export const portifolio = {
   title: 'Portifolio HTML, CSS and JS',
@@ -35,6 +36,7 @@ export const portifolio = {
     linkTwo: 'https://github.com/EliasFMartins/portifolio',
     linkTree: '#',
   },
+  isOpen:false
 }
 export const siteFilmes = {
   title: 'Site de Filmes',
@@ -44,6 +46,7 @@ export const siteFilmes = {
     linkTwo: 'https://github.com/EliasFMartins/consumindo-api-filmes',
     linkTree: '#',
   },
+  isOpen:false
 };
 
 export const landingPage = {
@@ -54,6 +57,7 @@ export const landingPage = {
     linkTwo: 'https://github.com/EliasFMartins/landing-page01',
     linkTree: '#',
   },
+  isOpen:false,
 }
 export const siteAndroid = {
   title: 'Site Sobre O Android',
@@ -63,4 +67,5 @@ export const siteAndroid = {
     linkTwo: 'https://github.com/EliasFMartins/projeto01',
     linkTree: '#',
   },
+  isOpen:false
 }

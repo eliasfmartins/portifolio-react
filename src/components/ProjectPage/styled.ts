@@ -40,11 +40,17 @@ export const ProjectContainer = styled.div`
     
   }
   div.optionsprojects{
+    
     display: flex;
     flex-direction: column;
     gap: 1rem;
    
   }
+  .actived{
+     text-decoration: underline;
+     color: red;
+     background-color: azure;
+    }
   @media (max-width: 968px){
     height: auto;
     gap: 2rem;

@@ -1,8 +1,9 @@
-import { useContext, useReducer } from "react"
+import { useContext } from "react"
 import { ProjectContainer } from "./styled"
 import { ReduceContext } from "../reducer/context"
-import { loadFilmePage, loadLandingPage } from "../reducer/actions"
-import { data2, data3, data4, data5 } from "../reducer/data"
+import { loadHomePage, loadFilmePage, loadLandingPage, loadAndroidPage, loadPortifolioPage } from "../reducer/actions"
+import { home, landingPage, portifolio, siteAndroid, siteFilmes } from "../reducer/data"
+import classNames from "classnames"
 
 
 
@@ -32,11 +33,16 @@ export const ProjectPage = () => {
           <h2>Projects</h2>
         </div>
         <div className="optionsprojects">
-          <h4 onClick={() => reducerDispatch(loadLandingPage())}>{reducerState.title}</h4>
-          <h4 onClick={() => reducerDispatch(loadFilmePage())}>{data2.title}</h4>
-          <h4 onClick={() => reducerDispatch(loadFilmePage())}>{data3.title}</h4>
-          <h4 onClick={() => reducerDispatch(loadFilmePage())}>{data4.title}</h4>
-          <h4 onClick={() => reducerDispatch(loadFilmePage())}>{data5.title}</h4>
+          <h4 onClick={() => reducerDispatch(loadHomePage())}
+            className={home.isOpen ? 'actived' : ''}>{home.title}</h4>
+          <h4 onClick={() => reducerDispatch(loadPortifolioPage())}
+            className={portifolio.isOpen ? 'actived' : ''}>{portifolio.title}</h4>
+          <h4 onClick={() => reducerDispatch(loadFilmePage())}
+            className={siteFilmes.isOpen ? 'actived' : ''}>{siteFilmes.title}</h4>
+          <h4 onClick={() => reducerDispatch(loadAndroidPage())}
+            className={siteAndroid.isOpen ? 'actived' : ''}>{siteAndroid.title}</h4>
+          <h4 onClick={() => reducerDispatch(loadLandingPage())}
+            className={landingPage.isOpen ? 'actived' : ''}>{landingPage.title}</h4>
         </div>
 
       </div>

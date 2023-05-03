@@ -1,36 +1,64 @@
 import * as types from './types'
 import * as data from './data'
-export const reducer = (state:any, action:any) => {
+export const reducer = (state: any, action: any) => {
+  const toogleFalse = () => {
+    data.home.isOpen = false
+    data.landingPage.isOpen = false
+    data.portifolio.isOpen = false
+    data.siteAndroid.isOpen = false
+    data.siteFilmes.isOpen = false
+  }
   switch (action.type) {
     case types.PROJECT_PORTIFOLIO_REACT: {
-      return data.home
+      toogleFalse()
+      data.home.isOpen = true
+      return { ...data.home, }
     }
     case types.PROJECT_FILME_PAGE: {
-      if(state===data.siteFilmes){
-        return{...data.home}
+      if (state.title === data.siteFilmes.title) {
+        toogleFalse()
+        data.home.isOpen = true
+        return { ...data.home, isOpen: true }
       }
-      return data.siteFilmes
+      toogleFalse()
+      data.siteFilmes.isOpen = true
+      return { ...data.siteFilmes }
     }
     case types.PROJECT_PORTIFOLIO_PAGE: {
-      if(state===data.portifolio){
-        return{...data.home}
+      if (state.title === data.portifolio.title) {
+        toogleFalse()
+        data.home.isOpen = true
+        return { ...data.home }
       }
-      return data.portifolio
+      toogleFalse()
+      data.portifolio.isOpen = true
+      return { ...data.portifolio, isOpen: true }
     }
     case types.PROJECT_LADING_PAGE: {
-      if(state===data.landingPage){
-        return{...data.home}
+      if (state.title === data.landingPage.title) {
+        toogleFalse()
+        data.home.isOpen = true
+        return { ...data.home }
       }
-      return data.siteFilmes
+      toogleFalse()
+      data.landingPage.isOpen = true
+      return { ...data.landingPage, isOpen: true }
     }
     case types.PROJECT_ANDROID_PAGE: {
-      if(state===data.siteAndroid){
-        return{...data.home}
+      if (state.title === data.siteAndroid.title) {
+        toogleFalse()
+        data.home.isOpen = true
+        return { ...data.home }
       }
-      return data.siteFilmes
-    }  
+      toogleFalse()
+      data.siteAndroid.isOpen = true
+
+      return { ...data.siteAndroid, isOpen: true }
+    }
 
   }
+
+
   return { ...state }
 }
 
