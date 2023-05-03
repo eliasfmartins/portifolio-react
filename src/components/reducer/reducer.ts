@@ -2,16 +2,33 @@ import * as types from './types'
 import * as data from './data'
 export const reducer = (state:any, action:any) => {
   switch (action.type) {
-    case types.PROJECT_LADING_PAGE: {
-      if(state===data.Default){
-        return{...data.Default}
-      }
-      return data.Default
+    case types.PROJECT_PORTIFOLIO_REACT: {
+      return data.home
     }
     case types.PROJECT_FILME_PAGE: {
-      return data.data2
+      if(state===data.siteFilmes){
+        return{...data.home}
+      }
+      return data.siteFilmes
     }
-    
+    case types.PROJECT_PORTIFOLIO_PAGE: {
+      if(state===data.portifolio){
+        return{...data.home}
+      }
+      return data.portifolio
+    }
+    case types.PROJECT_LADING_PAGE: {
+      if(state===data.landingPage){
+        return{...data.home}
+      }
+      return data.siteFilmes
+    }
+    case types.PROJECT_ANDROID_PAGE: {
+      if(state===data.siteAndroid){
+        return{...data.home}
+      }
+      return data.siteFilmes
+    }  
 
   }
   return { ...state }
