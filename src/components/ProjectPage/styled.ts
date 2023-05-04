@@ -13,14 +13,14 @@ export const ProjectContainer = styled.div`
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    max-height: 500px;
-    min-height: 300px;
-    width: 50%;
+    width: 100%;
+    height: 40%;
+    display: flex;
     padding: 20px;
     border-top: solid 1px white;
     border-left: solid 1px white;
     justify-content: space-between;
+    min-height: 300px;
     h2{
       padding: 10px  0px;
       backdrop-filter: blur(5px);
@@ -28,6 +28,13 @@ export const ProjectContainer = styled.div`
       display: inline-block;
     }
   }
+  div.content-container{
+    width: 50%;
+    overflow: hidden;
+    max-height: 500px;
+    min-height: 300px;
+  }
+
   div.options{
     border-radius: 8px;
     display: flex;
@@ -42,6 +49,38 @@ export const ProjectContainer = styled.div`
     
     
   }
+  .animate-container {
+  width: 88vw;
+  padding: 50px;
+}
+  .animate {
+  width: 88vw;
+  transition: 0.8s;
+  padding: 50px;
+}
+
+.animate-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.animate-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 500ms ease-in-out;
+}
+
+.animate-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.animate-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 500ms ease-in-out;
+}
+
   div.links{
     position: relative;
     width: 100%;
@@ -129,9 +168,11 @@ export const ProjectContainer = styled.div`
     width:88vw;
     max-width: none;
   }
-  div.container.mounted{
+  div.container.animate{
+    width:88vw;
     transition: 0.8s;
     color: red;
+    padding: 50px;
   }
   div.options{
     width:88vw;
@@ -140,3 +181,4 @@ export const ProjectContainer = styled.div`
   }
  
 `;
+
