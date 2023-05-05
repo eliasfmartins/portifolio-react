@@ -1,9 +1,9 @@
-import { useContext, useState } from "react"
-import { ReduceContext } from "../reducer/context"
 import { loadHomePage, loadFilmePage, loadLandingPage, loadAndroidPage, loadPortifolioPage } from "../reducer/actions"
 import { home, landingPage, portifolio, siteAndroid, siteFilmes } from "../reducer/data"
 import { CSSTransition } from "react-transition-group"
 import { ProjectContainer } from "./styled";
+import { ReduceContext } from "../reducer/context";
+import { useContext, useState } from "react";
 
 export const ProjectPage = () => {
   const reducerContext = useContext(ReduceContext);
@@ -14,7 +14,7 @@ export const ProjectPage = () => {
     <ProjectContainer>
 
       <div className="content-container">
-        <CSSTransition in={isEnter} timeout={1000} classNames="animate" >
+        <CSSTransition in={isEnter} timeout={1000} classNames="animate">
           <div className="container">
             <div className="text">
               <h2>{reducerState.title}</h2>
