@@ -1,9 +1,10 @@
 import { SkillsContainer } from "./styled"
+import { FaBeer ,} from "@react-icons/all-files/fa/FaBeer";
 
 export const Skills = () => {
   return(
     <SkillsContainer>
-      <div>React</div>
+      <div>React <FaBeer/> </div>
       <div>JavaScript</div>
       <div>TypeScript</div>
       <div>Html & CSS</div>
