@@ -1,15 +1,28 @@
-import { SkillsContainer } from "./styled"
-import { FaBeer ,} from "@react-icons/all-files/fa/FaBeer";
+import { Card } from "../Cards";
+import { SkillsContainer } from "./styled";
+import { GrReactjs } from "react-icons/gr";
+import {
+  SiCss3,
+  SiCssmodules,
+  SiJavascript,
+  SiStyledcomponents,
+  SiTypescript,
+} from "react-icons/si";
+import { RiHtml5Fill } from "react-icons/ri";
+import { BsGit, BsGithub } from "react-icons/bs";
 
 export const Skills = () => {
-  return(
+  return (
     <SkillsContainer>
-      <div>React <FaBeer/> </div>
-      <div>JavaScript</div>
-      <div>TypeScript</div>
-      <div>Html & CSS</div>
-      <div>Git & GitHub</div>
-      <div>CSSModules & StyledConponents</div>
+      <Card title="react" img={<GrReactjs size={80} />} />
+      <Card title="JavaScript" img={<SiJavascript size={80} />} />
+      <Card title="TypeScript" img={<SiTypescript size={80} />} />
+      <Card title="Html" img={<RiHtml5Fill size={80} />} />
+      <Card title="CSS" img={<SiCss3 size={80} />} />
+      <Card title="Git " img={<BsGit size={80} />} />
+      <Card title="GitHub" img={<BsGithub size={80} />} />
+      <Card title="CSSModules" img={<SiCssmodules size={80} />} />
+      <Card title="StyledConponents" img={<SiStyledcomponents size={80} />} />
     </SkillsContainer>
-  )
-}
+  );
+};

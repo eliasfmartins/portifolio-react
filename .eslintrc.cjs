@@ -22,7 +22,6 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    project: "./tsconfig.json", // caminho para o arquivo tsconfig.json
   },
   plugins: ["react", "prettier", "react-hooks", "@typescript-eslint"],
 
