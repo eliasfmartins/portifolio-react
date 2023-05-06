@@ -1,5 +1,5 @@
 import { Card } from "../Cards";
-import { SkillsContainer } from "./styled";
+import { Container, ShowContent, SkillsContainer } from "./styled";
 import { GrReactjs } from "react-icons/gr";
 import {
   SiCss3,
@@ -13,16 +13,24 @@ import { BsGit, BsGithub } from "react-icons/bs";
 
 export const Skills = () => {
   return (
-    <SkillsContainer>
-      <Card title="react" img={<GrReactjs size={80} />} />
-      <Card title="JavaScript" img={<SiJavascript size={80} />} />
-      <Card title="TypeScript" img={<SiTypescript size={80} />} />
-      <Card title="Html" img={<RiHtml5Fill size={80} />} />
-      <Card title="CSS" img={<SiCss3 size={80} />} />
-      <Card title="Git " img={<BsGit size={80} />} />
-      <Card title="GitHub" img={<BsGithub size={80} />} />
-      <Card title="CSSModules" img={<SiCssmodules size={80} />} />
-      <Card title="StyledConponents" img={<SiStyledcomponents size={80} />} />
-    </SkillsContainer>
+    <Container>
+      <SkillsContainer>
+        <Card title="React" img={<GrReactjs size={80} />} />
+        <Card title="JavaScript" img={<SiJavascript size={80} />} />
+        <Card title="TypeScript" img={<SiTypescript size={80} />} />
+        <Card title="Html" img={<RiHtml5Fill size={80} />} />
+        <Card title="CSS" img={<SiCss3 size={80} />} />
+        <Card title="Git " img={<BsGit size={80} />} />
+        <Card title="GitHub" img={<BsGithub size={80} />} />
+        <Card title="CSS Modules" img={<SiCssmodules size={80} />} />
+        <Card
+          title="Styled Conponents"
+          img={<SiStyledcomponents size={80} />}
+        />
+      </SkillsContainer>
+      <ShowContent>
+        <div className="center">oie</div>
+      </ShowContent>
+    </Container>
   );
 };
