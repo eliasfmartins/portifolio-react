@@ -16,8 +16,11 @@ export const SkillsContainer = styled.div`
   gap: 2rem;
   align-items: center;
   overflow: hidden;
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
+    width: 90%;
     height: auto;
+    align-items: center;
+    justify-content: center;
   }
 `;
 export const ShowContent = styled.div`
@@ -35,5 +38,8 @@ export const ShowContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;

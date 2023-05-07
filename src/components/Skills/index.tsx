@@ -29,7 +29,7 @@ export const Skills = () => {
         />
       </SkillsContainer>
       <ShowContent>
-        <div className="center">oie</div>
+        <div className="center">Ainda em desenvolvimento</div>
       </ShowContent>
     </Container>
   );

@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   margin-top: 60px;
-  height: 100%;
+
+  height: calc(100vh - 90px);
+
   display: flex;
 
   align-items: center;
