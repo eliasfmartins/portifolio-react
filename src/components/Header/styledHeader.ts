@@ -62,11 +62,10 @@ export const Nav = styled.nav`
   }
 `;
 
-
 export const Headerstyle = styled.div<HeaderStylesProps>`
   text-shadow: 1px 1px 2px black;
   top: 0;
-  font-family: 'Bruno Ace SC', cursive;
+  font-family: "Bruno Ace SC", cursive;
   backdrop-filter: blur(5px);
   width: 100%;
   box-sizing: border-box;
@@ -78,7 +77,7 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
   height: 60px;
   position: fixed;
   div.center {
-    position: ${props => props.isActive ? 'fixed' : 'static'};
+    position: ${(props) => (props.isActive ? "fixed" : "static")};
     display: flex;
     width: 96%;
     padding: 0 20px;
@@ -87,7 +86,7 @@ export const Headerstyle = styled.div<HeaderStylesProps>`
     border-bottom: 1px solid white;
     height: 100%;
   }
-  h1.logo{
+  h1.logo {
     z-index: 60000;
   }
   /* ${(props) => {
@@ -165,7 +164,7 @@ export const LinkStyled = styled(Link)`
   color: white;
   background-color: transparent;
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -179,4 +178,3 @@ export const LinkStyled = styled(Link)`
     width: 100%;
   }
 `;
-

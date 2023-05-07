@@ -4,11 +4,9 @@ export const ProjectContainer = styled.div`
   flex-wrap: wrap;
 
   margin-top: 60px;
-
-  height: calc(100vh - 90px);
-
+  z-index: 10;
   display: flex;
-
+  height: 100%;
   align-items: center;
 
   justify-content: space-around;

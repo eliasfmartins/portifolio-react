@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterStyle = styled.footer`
   background: transparent;
   width: 100%;
-  text-shadow: 1px 1px 2px black; 
+  text-shadow: 1px 1px 2px black;
   display: flex;
   justify-content: center;
   color: white;
