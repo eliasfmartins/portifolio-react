@@ -4,9 +4,11 @@ export const ProjectContainer = styled.div`
   flex-wrap: wrap;
 
   margin-top: 60px;
-  z-index: 10;
+
+  height: calc(100vh - 90px);
+
   display: flex;
-  height: 100%;
+
   align-items: center;
 
   justify-content: space-around;
@@ -258,6 +260,9 @@ export const ProjectContainer = styled.div`
       width: 88vw;
 
       max-width: none;
+    }
+    div.content-container {
+      width: 100%;
     }
 
     div.container.animate {

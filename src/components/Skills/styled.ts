@@ -4,8 +4,8 @@ export const Container = styled.div`
   flex-wrap: wrap;
 `;
 export const SkillsContainer = styled.div`
-  min-height: calc(100vh - 90px);
-  height: auto;
+  min-height: calc(100vh - 180px);
+  height: calc(100vh - 90px);
   overflow-y: auto;
   flex-wrap: wrap;
   width: 50%;
@@ -17,11 +17,12 @@ export const SkillsContainer = styled.div`
   align-items: center;
   overflow: hidden;
   @media (max-width: 768px) {
+    height: auto;
   }
 `;
 export const ShowContent = styled.div`
   width: 50%;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 180px);
   margin-top: 60px;
   display: flex;
   align-items: center;
