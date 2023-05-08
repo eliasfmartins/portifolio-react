@@ -12,9 +12,8 @@ export const Contact = () => {
       </div>
       <div className="links">
         <h4>
-          <BsWhatsapp size={40} /> <a href="https://wa.me/5561984243799">
-            (61) 9 8424 - 3799
-          </a>
+          <BsWhatsapp size={40} />
+          <a href="https://wa.me/5561984243799">(61) 9 8424 - 3799</a>
         </h4>
         <h4>
           <IoMdMail size={40} />
