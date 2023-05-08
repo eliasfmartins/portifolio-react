@@ -10,15 +10,19 @@ export const ContactContainer = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
+  flex-wrap: wrap;
   div.contact {
+    min-width: 400px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
     align-items: center;
     justify-content: center;
   }
   div.links {
+    min-width: 400px;
+
     border-left: white solid 1px;
     display: flex;
     flex-direction: column;
@@ -42,5 +46,15 @@ export const ContactContainer = styled.div`
   a {
     text-decoration: none;
     color: white;
+  }
+  @media (max-width: 900px) {
+    height: auto;
+    border-left: none;
+
+    div.links {
+      border: none;
+      border-top: white solid 1px;
+      min-height: 550px;
+    }
   }
 `;

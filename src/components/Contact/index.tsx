@@ -12,10 +12,15 @@ export const Contact = () => {
       </div>
       <div className="links">
         <h4>
-          <BsWhatsapp size={40} /> (61) 98424-3799
+          <BsWhatsapp size={40} /> <a href="https://wa.me/5561984243799">
+            (61) 9 8424 - 3799
+          </a>
         </h4>
         <h4>
-          <IoMdMail size={40} /> ELIASMARTINSROCK84@GMAIL.COM
+          <IoMdMail size={40} />
+          <a href="mailto:eliasmartinsrock84@gmail.com?subject=duvida a respeito do portifolio">
+            eliasmartinsrock84@gmail.com
+          </a>
         </h4>
         <h4>
           <BsGithub size={40} />
