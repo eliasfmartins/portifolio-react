@@ -198,6 +198,9 @@ export const ProjectContainer = styled.div`
 
     gap: 1rem;
   }
+  div.text {
+    line-height: 1.7rem;
+  }
 
   .obj {
     padding: 5px;

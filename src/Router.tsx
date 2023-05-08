@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { Home } from "./components/Home";
 import { ProjectPage } from "./components/ProjectPage";
 import { Skills } from "./components/Skills";
+import { Contact } from "./components/Contact";
 
 export const Router = () => {
   const location = useLocation();
@@ -15,6 +16,7 @@ export const Router = () => {
           <Route path="/" element={<Home />} />
           <Route path="/projectpage" element={<ProjectPage />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
     </AnimatePresence>

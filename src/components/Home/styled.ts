@@ -30,7 +30,8 @@ export const HomeContainer = styled.div`
 
     max-width: 500px;
 
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
 
     display: flex;
 

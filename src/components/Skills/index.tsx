@@ -16,7 +16,7 @@ export const Skills = () => {
   return (
     <SkillsContainer>
       <Card title="Next.JS" img={<TbBrandNextjs size={80} />} />
-      <Card title="react" img={<GrReactjs size={80} />} />
+      <Card title="React" img={<GrReactjs size={80} />} />
       <Card title="TypeScript" img={<SiTypescript size={80} />} />
       <Card title="JavaScript" img={<SiJavascript size={80} />} />
       <Card title="Html" img={<RiHtml5Fill size={80} />} />

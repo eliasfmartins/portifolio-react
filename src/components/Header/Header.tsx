@@ -64,6 +64,11 @@ export const Header = ({ colorHeader = "light" }: HeaderProps) => {
             </LinkStyled>
           </li>
           <li>
+            <LinkStyled to="/contact" onClick={() => setIsActive(false)}>
+              Contact-Me
+            </LinkStyled>
+          </li>
+          <li>
             <ButtonColor isDark={false} onClick={() => setColor(!color)} />
           </li>
         </Nav>
