@@ -11,10 +11,12 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
 }
  body {
-  background: url("/herobg-md.webp");
+  /* background: url("/herobg-md.webp"); */
+  background-image: url("/blog-cards/public/herobg-4k.jpg");
+  background: url("/herobg-hd.webp") no-repeat;
+  image-rendering: optimizeQuality;
+  background-position: top center;
   background-size: cover;
-  /* color:white; */
-  
  }
 
  body, input-security, textarea, button {
