@@ -3,18 +3,7 @@
     "composite": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true,
-    "target": "ES6",
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "strict": true
+    "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "vite.config.ts",
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["vite.config.ts"]
 }
